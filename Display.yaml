@@ -201,7 +201,7 @@ functions:
     Some devices include "safe areas," these areas are regions of the screen in which you should avoid rendering your content. You can access the safe area insets through the `layout.safeArea` property. These values are insets, and represent how much you should inset your content from the respective edge of the view in order to ensure it remains visible and interactive.
 
 
-    When the view size changes, Codea calls the global function `sizeChanged( width, height )` and passes it the new view size.
+    When the view size changes, and when device orientation changes, Codea calls the global function `sizeChanged( width, height )` and passes it the new view size.
     
   examples:
   - example: |
@@ -211,6 +211,7 @@ functions:
       function sizeChanged( newWidth, newHeight )
           -- This function gets called when
           -- the view size changes
+          -- and when device orientation changes
       end
   group: Layout
   id: layoutOverview
