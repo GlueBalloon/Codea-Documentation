@@ -219,7 +219,6 @@ functions:
   - layout.horizontal
   - layout.vertical
   - layout.safeArea
-  - CurrentOrientation
 #---------------------------------
 
 #---------------------------------
@@ -345,85 +344,8 @@ functions:
   - layoutOverview
   - layout.horizontal
   - layout.vertical
-#---------------------------------
-
-#---------------------------------
-# CurrentOrientation
-#---------------------------------     
-- category: const
-  description: >
-    This global contains the current orientation and can be one of
-    the following: `PORTRAIT`, `PORTRAIT_UPSIDE_DOWN`, `LANDSCAPE_LEFT`, `LANDSCAPE_RIGHT`.
-  group: Layout
-  id: CurrentOrientation
-  name: CurrentOrientation
-  related:
-  - PORTRAIT
-  - PORTRAIT_UPSIDE_DOWN
-  - LANDSCAPE_LEFT
-  - LANDSCAPE_RIGHT
-#---------------------------------                
-                   
-#---------------------------------
-# PORTRAIT
-#---------------------------------     
-- category: const
-  description: Check for this value in `CurrentOrientation` to detect if the
-    device is in standard portrait orientation (home button at the bottom).
-  group: Layout
-  id: PORTRAIT
-  name: PORTRAIT
-  related:
-  - CurrentOrientation
-  - PORTRAIT_UPSIDE_DOWN
-  syntax: CurrentOrientation == PORTRAIT
-#---------------------------------
-                   
-#---------------------------------
-# PORTRAIT_UPSIDE_DOWN
-#---------------------------------     
-- category: const
-  description: Check for this value in `CurrentOrientation` to detect if the
-    device is in inverted portrait orientation (home button at the top).
-  group: Layout
-  id: PORTRAIT_UPSIDE_DOWN
-  name: PORTRAIT_UPSIDE_DOWN
-  related:
-  - CurrentOrientation
-  - PORTRAIT
-  syntax: CurrentOrientation == PORTRAIT_UPSIDE_DOWN
-#---------------------------------
-                   
-#---------------------------------
-# LANDSCAPE_LEFT
-#---------------------------------     
-- category: const
-  description: Check for this value in `CurrentOrientation` to detect if the
-    device is in landscape left orientation (home button on left).
-  group: Layout
-  id: LANDSCAPE_LEFT
-  name: LANDSCAPE_LEFT
-  related:
-  - CurrentOrientation
-  - LANDSCAPE_RIGHT
-  syntax: CurrentOrientation == LANDSCAPE_LEFT
-#---------------------------------
-                   
-#---------------------------------
-# LANDSCAPE_RIGHT
-#---------------------------------     
-- category: const
-  description: Check for this value in `CurrentOrientation` to detect if the
-    device is in landscape right orientation (home button on right).
-  group: Layout
-  id: LANDSCAPE_RIGHT
-  name: LANDSCAPE_RIGHT
-  related:
-  - CurrentOrientation
-  - LANDSCAPE_LEFT
-  syntax: CurrentOrientation == LANDSCAPE_RIGHT
-#---------------------------------
-                   
+#---------------------------------                  
+                  
 #---------------------------------
 # Using the Keyboard
 #---------------------------------     
