@@ -346,24 +346,7 @@ functions:
   - layout.horizontal
   - layout.vertical
 #---------------------------------
-
-#---------------------------------
-# CurrentOrientation
-#---------------------------------     
-- category: const
-  description: >
-    This global contains the current orientation and can be one of
-    the following: `PORTRAIT`, `PORTRAIT_UPSIDE_DOWN`, `LANDSCAPE_LEFT`, `LANDSCAPE_RIGHT`.
-  group: Layout
-  id: CurrentOrientation
-  name: CurrentOrientation
-  related:
-  - PORTRAIT
-  - PORTRAIT_UPSIDE_DOWN
-  - LANDSCAPE_LEFT
-  - LANDSCAPE_RIGHT
-#---------------------------------                
-                   
+       
 #---------------------------------
 # PORTRAIT
 #---------------------------------     
